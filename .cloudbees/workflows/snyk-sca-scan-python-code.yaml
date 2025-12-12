@@ -14,5 +14,5 @@ jobs:
       - name: snyk sast
         uses: cloudbees-io/snyk-sca-plugin-private@v1
         with:
-          orgname: ${{ vars.SNYK_ORG_NAME }}
+          org-id: ${{ vars.SNYK_ORG_NAME }}
           token: ${{ secrets.SNYK_TOKEN }}
